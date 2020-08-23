@@ -22,12 +22,7 @@
     </script>
 
     <style amp-custom>
-      body {
-          background-color: white;
-          font-family: "Open Sans", sans-serif;
-          line-height: 1.5rem;
-          margin-left: 10%;
-      }
+      
       h1 {
             font-weight: 90;
             margin: 20;
@@ -42,20 +37,68 @@
             margin-right: auto;
             width: 50%;
         }
+
+
+        /* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html{
+  min-height: 100%;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 25%;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 8em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
   </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   </head>
   <body>
     <h1 align="center">Dextero Labs</h1>
     <amp-img class="amp-img"
-      alt="A view of the sea"
+      alt="DexteroLabs"
       src="https://cdn.pixabay.com/photo/2018/02/12/23/55/hud-3149462_1280.png"
       width="200"
       height="200"
       layout="fixed"
     >
     </amp-img>
-    <h1 align="center">That's all for now!</h1>
+    <h1 align="center">We make apps</h1>
+
+    <br/>
+    <p class="line-1 anim-typewriter">About <a href = "https://prathap.dexterolabs.xyz">Me</a> &#128187;  </p>
 
   </body>
+
 </html>
